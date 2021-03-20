@@ -1,0 +1,302 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	background-color: #c3c3c3
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+.single-item, .slick-initialized, .slick-slider, .slick-dotted
+	width: 1120px
+.single
+	&-item
+		position: relative
+		z-index: 2
+		.slick-track
+			width: 1120px
+		
+			
+			
+		&_idx
+			background: url(../img/@1x/Rectangle.png)
+			border-radius: 24px
+			position: relative
+			z-index: 5
+			.pixel
+				position: absolute
+				z-index: 100
+				right: -45px
+				top: -10px
+			.header
+				display: flex
+				flex-direction: column
+				align-items: center
+				justify-content: center
+				padding-top: 64px
+				margin-bottom: 77px
+				h3
+					font-family: Mulish;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 36px;
+					line-height: 48px;
+					margin-bottom: 25px
+					color: #ffffff
+			.main
+				display: flex
+				align-items: center
+				justify-content: space-between
+				padding-bottom: 60px
+				.main_img
+					display: flex
+					align-items: center
+					img
+						width: 141px
+						height: 141px
+						margin-right: 29px
+						margin-left: 119px
+					div
+						h3
+							font-style: normal;
+							font-weight: bold;
+							font-size: 22px;
+							line-height: 48px;
+							margin-bottom: 0
+							color: #ffffff
+						p
+							font-style: normal;
+							font-weight: normal;
+							font-size: 18px;
+							line-height: 48px;
+							margin-bottom: 0
+							color: #ffffff
+				.main_description
+					width: 420px
+					margin-right: 118px
+					margin-left: 110px
+					p
+						font-style: normal;
+						font-weight: normal;
+						font-size: 19px;
+						line-height: 30px;
+						color: #ffffff
+
+
+
+.slider
+	&-arrow
+		position: absolute
+		bottom: -42px
+		z-index: 99
+		height: 20px
+		width: 29px
+		cursor: pointer
+		&_right
+			background: url(../img/@1x/arrow-right-unactive.png) center no-repeat
+			right: 50%
+			margin-right: -150px
+			&:hover
+				background: url(../img/@1x/arrow-right-active.png) center no-repeat
+			&:focus
+		
+					
+				
+				
+		&_left
+			background: url(../img/@1x/arrow-left-unactive.png) center no-repeat
+			left: 50%
+			margin-left: -150px
+			&:hover
+				background: url(../img/@1x/arrow-left-active.png) center no-repeat
+			&:focus
+					
+.slick
+	&-dots
+		bottom: -42px
+.slick-dots li button:before
+	color: blue
+	content: ''
+	background: url(../img/@1x/cyrkle-unactive.png) center no-repeat
+.slick-dots li.slick-active button:before
+	background: url(../img/@1x/cyrkle-aktive.png) center no-repeat
+
+@media screen and (max-width: 768px)
+	.single-item
+		&_idx
+			.header
+				h3
+					color: #c3c3c3
+					font-size: 44px
+			.main
+				padding-bottom: 40px
+				.main_img
+					div
+						h3
+							color: #c3c3c3
+							font-size: 32px
+						p
+							color: #c3c3c3
+							font-size: 24px
+				.main_description
+					p
+						color:#c3c3c3
+						font-size: 24px
+
+@media screen and (max-width: 430px)
+	.single-item
+		&_idx
+			.header
+				padding-top: 40px
+				margin-bottom: 40px
+				h3
+					color: brown
+					font-size: 48px
+			.main
+				padding-bottom: 40px
+				.main_img
+					div
+						h3
+							color: brown
+							font-size: 32px
+						p
+							color: brown
+							font-size: 29px
+				.main_description
+					p
+						color: brown
+						font-size: 28px
+
+
+@media screen and (max-width: 325px)
+	.single-item
+		&_idx
+			.header
+				padding-top: 30px
+				margin-bottom: 30px
+				h3
+					color: #000
+					font-size: 60px
+			.main
+				padding-bottom: 20px
+				.main_img
+					div
+						h3
+							color: #000
+							font-size: 40px
+						p
+							color: #000
+							font-size: 32px
+				.main_description
+					margin-left: 60px
+					p
+						color:#000
+						font-size: 32px
+	
+	
+		
+		
+	
+		
+
+		
+	
+
+
+
+
+
+
+		
+		
+		
+		
+
+	 
+	
+	 
+    
+	
+	
+	
+		
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	 
+		
+	
+    
+	
+	
+			
+	
+		
+		
+		
+		
+		
+	
+	
+	
+	
+	
+
+
+
+
+@import "media" // Always at the end
